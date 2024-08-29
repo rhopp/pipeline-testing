@@ -24,7 +24,7 @@ spec:
     - name: image-url
       value: $(params.output-image)
     - name: build-task-status
-      value: $(tasks.build-container.results.status)
+      value: $(tasks.build-container.status)
     taskRef:
       name: summary
       version: "0.2"
