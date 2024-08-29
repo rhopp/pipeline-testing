@@ -48,6 +48,12 @@ spec:
           fi
           chmod 400 "${HOME}/.git-credentials"
           chmod 400 "${HOME}/.gitconfig"
+        else
+          echo "git credentials to push into gitops repository ${PARAM_GITOPS_REPO_URL} is not configured."
+          echo "gitops repository is not updated automatically."
+          echo "You can update gitops repository with the new image: ${PARAM_IMAGE} manually"
+          echo "TODO: configure git credentials to update gitops repository."
+          exit 0
         fi
 
         git config --global user.email "rhtap@noreplay.com"
