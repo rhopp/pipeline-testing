@@ -18,8 +18,7 @@ spec:
         Secret of basic-auth type containing credentials to commit into gitops repository.
   workspaces:
     - name: gitops-auth
-      secret:
-        secretName: $(pasams.gitops-auth-secret-name)
+      optional: true
   volumes:
     - name: gitops-auth-secret
       secret:
