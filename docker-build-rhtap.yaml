@@ -219,9 +219,6 @@ spec:
       values:
       - pull_request
       - Merge Request
-    workspaces:
-    - name: gitops-auth
-      optional: true
   workspaces:
   - name: workspace
   - name: git-auth
