@@ -221,10 +221,8 @@ spec:
       - Merge Request
     workspaces:
     - name: gitops-auth
-      workspace: gitops-auth
+      optional: true
   workspaces:
   - name: workspace
-  - name: gitops-auth
-    optional: true
   - name: git-auth
     optional: true
