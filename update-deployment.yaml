@@ -54,6 +54,7 @@ spec:
         git config --global user.name "gitops-update"
 
         git clone ${PARAM_GITOPS_REPO_URL}
+        gitops_repo_url=${PARAM_GITOPS_REPO_URL%'.git'}
         gitops_repo_name=$(basename ${gitops_repo_url})
         cd ${gitops_repo_name}
 
